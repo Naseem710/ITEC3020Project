@@ -5,25 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naseem Mohsin's Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Only applies to home page so it was coded into index.html rather than shared css -->
-  <style>
-    .hero-eyebrow { color: #5B4FE8; }
-    .home-highlights {
-      display: flex;
-      gap: 2rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-    .home-highlights div { font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; }
-    .home-highlights strong { display: block; font-size: 1.5rem; color: #14161C; }
-  </style>
+  <script src="js/theme.js" defer></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="nav-wrap">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo">Naseem Mohsin</a>
       <nav><ul class="nav-links">
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -32,14 +20,15 @@
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul></nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode">Dark Mode</button>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="intro-section">
       <div>
         <h1>Hi, I'm Naseem Mohsin.</h1>
-        <p class="lede">
+        <p class="intro-text">
           Hi, I am Naseem Mohsin, an Information Technology Honours student at York University with experience in IT support, 
           data analytics, business operations, and team leadership. Through my roles at Circle of Care, ventureLAB, and Canada Wonderland,
            I have developed strong technical, problem-solving, communication, and organizational skills. 
@@ -48,18 +37,18 @@
            technical skills, academic projects, and continued growth in the information technology field.
 
         </p>
-        <div class="hero-actions">
+        <div class="intro-actions">
           <a href="projects.html" class="btn btn-primary">View my projects</a>
           <a href="contact.html" class="btn btn-outline">Get in touch</a>
         </div>
       </div>
 
       <img
-        class="hero-photo"
-        src="c:\Users\Me\OneDrive\Desktop\ITEC3020Project\assets\naseemphoto.jpg" 
+        class="intro-photo"
+        src="assets/naseemphoto.jpg"
         alt="Photo of Naseem outside"
-        style= "width: 250px; height: 250px; object-fit: cover; border-radius: 50%;">
-        
+        style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%;">
+
     </section>
   </main>
 
