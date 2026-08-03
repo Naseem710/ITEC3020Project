@@ -155,7 +155,7 @@ p { margin: 0 0 1em; }
   .intro-photo { max-width: 260px; }
 }
 
-/* General header (not including home page)s */
+/* General header (not including home page) */
 .page-header {
   padding: 3.5rem 0 2rem;
   border-bottom: 1px solid var(--line);
@@ -214,7 +214,7 @@ section { padding: 2rem 0; }
   border-radius: 999px;
 }
 
-/* SKills on about page */
+/* Skills on about page */
 .skill-list, .value-list {
   list-style: none;
   padding: 0;
