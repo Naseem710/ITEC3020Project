@@ -4,7 +4,7 @@ function initThemeToggle() {
 
   function applyTheme(theme) {
     document.body.setAttribute("data-theme", theme);
-    toggleBtn.textContent = theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
+    toggleBtn.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
 
     // Save the selected theme to localStorage so it remains across pages and reloads
     localStorage.setItem("theme", theme);
