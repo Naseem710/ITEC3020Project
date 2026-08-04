@@ -1,7 +1,6 @@
 * { box-sizing: border-box; }
 
-/* light & dark theme colors
-light is default and dark overrides when JS sets data-theme="dark" on body */
+/* light/dark theme colors - light is default, dark overrides when JS sets data-theme="dark" on body */
 :root {
   --bg: #F6F5F1;
   --bg-raised: #FFFFFF;
@@ -10,6 +9,7 @@ light is default and dark overrides when JS sets data-theme="dark" on body */
   --accent: #5B4FE8;
   --accent-soft: #ECEAFB;
   --line: #DEDCD3;
+  --error: #C4432B;
 }
 
 [data-theme="dark"] {
@@ -20,6 +20,7 @@ light is default and dark overrides when JS sets data-theme="dark" on body */
   --accent: #9A90FF;
   --accent-soft: #23213A;
   --line: #2A2D38;
+  --error: #E5674F;
 }
 
 body {
@@ -155,7 +156,7 @@ p { margin: 0 0 1em; }
   .intro-photo { max-width: 260px; }
 }
 
-/* General header (not including home page) */
+/* General header (not including home page */
 .page-header {
   padding: 3.5rem 0 2rem;
   border-bottom: 1px solid var(--line);
@@ -214,7 +215,7 @@ section { padding: 2rem 0; }
   border-radius: 999px;
 }
 
-/* blog post cards rendered by js blog */
+/* blog post cards, rendered by js/blog.js */
 .post-card { position: relative; }
 .badge-latest {
   position: absolute;
@@ -263,6 +264,21 @@ input, textarea {
   color: var(--text);
 }
 textarea { min-height: 140px; resize: vertical; }
+.error-msg {
+  display: none;
+  color: var(--error);
+  font-size: 0.82rem;
+  margin-top: 0.35rem;
+}
+.error-msg.visible { display: block; }
+.form-success {
+  display: none;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 1.5rem;
+  color: var(--text);
+}
 
 .social-links { display: flex; gap: 1rem; margin-top: 1rem; }
 .social-links a {

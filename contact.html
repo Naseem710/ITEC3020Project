@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/theme.js" defer></script>
   <script src="js/components.js" defer></script>
+  <!-- validates the form below on submit, before it would actually send anywhere -->
+  <script src="js/validate.js" defer></script>
 
   <style>
     #contact-form { max-width: 560px; }
@@ -27,11 +29,13 @@
         <div class="form-field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
+          <span class="error-msg" id="name-error"></span>
         </div>
 
         <div class="form-field">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
+          <span class="error-msg" id="email-error"></span>
         </div>
 
         <div class="form-field">
@@ -42,10 +46,15 @@
         <div class="form-field">
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
+          <span class="error-msg" id="message-error"></span>
         </div>
 
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
+
+      <div class="form-success" id="form-success">
+        Thank you for your message! Please allow upto 2 business days for a response.
+      </div>
 
       <h2 style="margin-top: 3rem;">Find me on</h2>
       <!-- Links include the 3 apps I use the most -->
