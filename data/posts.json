@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Completion of First Work Project",
+    "date": "2026-07-15",
+    "summary": "Making progress at work.",
+    "category": "Work",
+    "content": "I was tasked me to keep track on the IT inventory and create a database for it. Although it took me a while I can finally say I have completed my first work project."
+  },
+  {
+    "id": 2,
+    "title": "5K Foam Fest Run",
+    "date": "2026-07-11",
+    "summary": "Went on a competitive run.",
+    "category": "Personal",
+    "content": "Today I decided to participate in the 5K foam fest run. It was a 5k run through foam and many obstacles. As challenging and tiring as it may have been, I thoroughly enjoyed the experience and can't wait for next year (I also got a nice finishers medal)."
+  },
+  {
+    "id": 3,
+    "title": "Summer Internship Secured!",
+    "date": "2026-05-11",
+    "summary": "After months of applying I finally found a job in IT.",
+    "category": "Career",
+    "content": "Today was my first day at  my summer internship with Circle of Care. Summer tech internships are one of the hardest things to land. I was able to do it not because I'm special but because I believed. Really excited about this opportunity!!"
+  }
+]

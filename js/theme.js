@@ -1,3 +1,4 @@
+// part 1
 function initThemeToggle() {
   const toggleBtn = document.getElementById("theme-toggle");
   if (!toggleBtn) return; // asks as a stop if the header hasn't loaded to avoid crashing

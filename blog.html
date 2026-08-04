@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/theme.js" defer></script>
   <script src="js/components.js" defer></script>
+  <!-- fetches and renders the posts below from data/posts.json -->
+  <script src="js/blog.js" defer></script>
 </head>
 <body>
 
@@ -19,39 +21,8 @@
         Welcome to my blog page. Here is where I will be sharing my updates on my life, projects I'm working on, what I'm learning, or just my thoughts.</p>
     </div>
 
-    <!-- This is where all my blogs are written -->
-    <section class="grid">
-      <article class="card post-card">
-        <h3 class="card-title">Completion of First Work Project</h3>
-        <div class="card-meta">
-          <span>July 15, 2026</span>
-        </div>
-        <p>I was tasked me to keep track on the IT inventory and create a database for it. Although it took me a while I can finally say I have completed my first work project.
-        </p>
-        <a href="#">Read more &rarr;</a>
-      </article>
-      
-      <article class="card post-card">
-        <h3 class="card-title">5K Foam Fest Run</h3>
-        <div class="card-meta">
-          <span>July 11, 2026</span>
-        </div>
-        <p>Today I decided to participate in the 5K foam fest run. It was a 5k run through foam and many obstacles. As challenging and tiring as it may have been,
-          I thoroughly enjoyed the experience and can't wait for next year (I also got a nice finishers medal).
-        </p>
-        <a href="#">Read more &rarr;</a>
-      </article>
-
-      <article class="card post-card">
-        <h3 class="card-title">Summer Internship Secured!</h3>
-        <div class="card-meta">
-          <span>May 11, 2026</span>
-        </div>
-        <p>Today was my first day of my summer internship. Summer tech internships are one of the hardest things to land.
-          <br>I was able to do it not because I'm special but because I believed. Really excited about this opportunity!! </p>
-        <a href="#">Read more &rarr;</a>
-      </article>
-
+    <!-- blog.js fillls this with post cards when page loads -->
+    <section id="blog-list" class="grid">
     </section>
       
   </main>

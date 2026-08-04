@@ -1,3 +1,4 @@
+//part 2
 // this code is for inserting the header and footer inside everypage without hard coding it
 
 function loadComponent(selector, filePath) {
