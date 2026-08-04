@@ -22,5 +22,38 @@
     "summary": "After months of applying I finally found a job in IT.",
     "category": "Career",
     "content": "Today was my first day at  my summer internship with Circle of Care. Summer tech internships are one of the hardest things to land. I was able to do it not because I'm special but because I believed. Really excited about this opportunity!!"
-  }
+  },
+  {
+  "id": 4,
+  "title": "Building Dark Mode Toggle",
+  "date": "2026-07-16",
+  "summary": "This feature allows the user to switch between dark and light mode in the website.",
+  "category": "Web Portfolio Log",
+  "content": "I built this by using the starter code's TODO's and filling them up step by step. I would then test out my progress with the VSB live server to see if it worked. The part that confused me was how localstorage actually persists the data. I thought that it would reset everytime the page loaded and I had to manually save it elsewhere, but then I realized localStroage.setITem() stays on there till you clear it yourself. I learned how useful the localStorage is, and how to apply it."
+},
+{
+  "id": 5,
+  "title": "Having Blog Load From JSON",
+  "date": "2026-07-17",
+  "summary": "This feature loads my blog posts from a seperate json file instead of directly typing it into HTML. It then sorts them afterwards from most recent to oldest.",
+  "category": "Web Portfolio Log",
+  "content": "I did this by using the starter code, testing my progress via live server, and looking things up on sites like W3Schools when I got stuck. The hardest part was getting fetch() to actually load the JSON file. Turns out I had a typo in the file path to data/posts.json, so nothing was showing up and I couldn't figure out why at first. Once I triple checked the path against my actual folder structure, it started working."
+},
+{
+  "id": 6,
+  "title": "Contact Form Validation",
+  "date": "2026-07-18",
+  "summary": "This part of my webpage required me to find a way to validate the information inputted in the contact form, and shows an error message under invalid texts.",
+  "category": "Web Portfolio Log",
+  "content": "Just like the other features I have, this one was built using a code template. The tricky part was getting errors to clear as you type. My first attempt didn't clear at all, and the fix was realizing I needed a separate clearError() call per field ID. I learned how to target one specific error element instead of all of them."
+},
+{
+  "id": 7,
+  "title": "Adding Live Search to Projects and Blog",
+  "date": "2026-07-19",
+  "summary": "This feature adds a search box above the projects and blog cards that hides results that don't match your search.",
+  "category": "Web Portfolio Log",
+  "content": "I approached it by reusing the same filter.js file for both pages. The hard part was making it work on the Blog page too, since those posts load dynamically. My first version didn't find any cards because they didn't exist yet when the script ran.e-querying the cards inside the input event listener itself, so it always checks whatever's currently in the DOM regardless of load timing, rather than running the filter setup again after posts finish loading. I ended up learning that timing matters a lot with dynamic content."
+}
+
 ]
