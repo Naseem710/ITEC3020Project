@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/theme.js" defer></script>
   <script src="js/components.js" defer></script>
+  <script src="js/filter.js" defer></script>
 </head>
 <body>
 
@@ -18,13 +19,26 @@
       <p class="intro-text">Here is some projects that I have done in the past.</p>
     </div>
 
+    <div class="filter-controls">
+      <label for="filter-input">Search projects</label>
+      <input
+        type="search"
+        id="filter-input"
+        placeholder="Search by title or description"
+        autocomplete="off">
+    </div>
+
+    <p id="no-results" class="no-results" role="status">
+      No projects found. Try a different search.
+    </p>
+
     <section class="grid">
 
       <article class="card project-card">
         <h3 class="card-title">Personal Website</h3>
         <div class="card-meta">
         </div>
-        <p>This is the first website I created when I started learning web design 2 years ago. I only used HTML and CSS. I did not learn JavaScript at the time.</p>
+        <p class="card-description">This is the first website I created when I started learning web design 2 years ago. I only used HTML and CSS. I did not learn JavaScript at the time.</p>
         <img class="card-img" src="assets/webproject.png"
         alt="Screenshot of Personal Website"
         style="width: 350px; height: 250px;">
@@ -36,7 +50,7 @@
         <div class="card-meta">
         </div>
         <h3 class="card-title">Employee Badge Audit</h3>
-        <p>At my previous job I was tasked to complete an employee badge
+        <p class="card-description">At my previous job I was tasked to complete an employee badge
            audit to ensure that all employees who left, their badge has been deactivated. I used this opportunity to create an SQL query that 
            will accomplish this task for me.</p>
         <img class="card-img" src="assets/vL_empDB.png"
